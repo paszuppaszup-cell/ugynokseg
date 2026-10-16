@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adatvédelmi tájékoztató</title>
+<style>
+  :root { --bg:#fafaf7; --fg:#1d1d1b; --muted:#5b5b57; --line:#e3e2dc; --accent:#2f5d50; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151514; --fg:#ecebe6; --muted:#a3a29b; --line:#2c2b29; --accent:#8fc1b1; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:56px 16px 72px; }
+  h1 { font-size:1.8rem; line-height:1.2; margin:0 0 8px; }
+  .meta { color:var(--muted); margin:0 0 32px; font-size:.95rem; }
+  h2 { font-size:1.1rem; margin:28px 0 8px; }
+  ul { padding-left:1.2em; }
+  a { color:var(--accent); }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.92rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Adatvédelmi tájékoztató</h1>
+  <p class="meta">„Ugynokseg n8n” levelező alkalmazás · Hatályos: 2026. október 16-tól</p>
+
+  <h2>Mire szolgál az alkalmazás</h2>
+  <p>Az „Ugynokseg n8n” az AI Automatizálási Ügynökség belső levelező eszköze. A Google-fiókhoz kizárólag az ügynökség saját fiókján (paszuppaszup@gmail.com) keresztül fér hozzá, más felhasználó fiókjához nem. A feladata, hogy az ügynökség jóváhagyott leveleit elküldje, és az ezekre érkező válaszokat a belső feladatkezelőbe továbbítsa.</p>
+
+  <h2>Milyen Google-adatokhoz fér hozzá</h2>
+  <ul>
+    <li><strong>Levél küldése</strong> az ügynökség fiókjából, a jóváhagyott tartalommal és mellékletekkel.</li>
+    <li><strong>Az ügynökség által indított levélszálak olvasása</strong>, hogy a választ a megfelelő beszélgetéshez rendelje, és ne küldjön kétszer ugyanarra a levélre.</li>
+  </ul>
+  <p>Az alkalmazás nem olvassa és nem dolgozza fel a fiók más leveleit, és nem fér hozzá más Google-szolgáltatáshoz.</p>
+
+  <h2>Hol tárolódnak az adatok</h2>
+  <ul>
+    <li>Az alkalmazás az ügynökség saját számítógépén, saját üzemeltetésű n8n-ben fut.</li>
+    <li>Az elküldött levelek azonosítója, a levélváltás szövege és a beérkező válaszok az ügynökség feladatkezelő rendszerébe (Multica) kerülnek, az adott ügyfélhez tartozó feladatba.</li>
+    <li>A Google-hozzáférés kulcsa titkosítva, kizárólag az n8n kulcstárában tárolódik.</li>
+  </ul>
+
+  <h2>Kivel osztjuk meg</h2>
+  <p>A Google-adatokat nem adjuk el, nem használjuk hirdetésre, és nem adjuk át harmadik félnek, kivéve a fent felsorolt, a működéshez szükséges szolgáltatásokat (Google Gmail, Multica feladatkezelő).</p>
+
+  <h2>Megfelelés a Google irányelveinek</h2>
+  <p>Az alkalmazás a Google API-kból kapott adatok felhasználása és más alkalmazásokba való továbbítása során betartja a <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> előírásait, beleértve a „Limited Use” (korlátozott felhasználás) követelményeit.</p>
+
+  <h2>Megőrzés és visszavonás</h2>
+  <p>A levelezési adatokat addig őrizzük, amíg az adott ügyféllel kapcsolatos ügyintézéshez szükséges. A hozzáférés bármikor visszavonható a Google-fiók biztonsági beállításaiban („Harmadik féltől származó hozzáférés”), ezzel az alkalmazás azonnal leáll.</p>
+
+  <h2>Kapcsolat</h2>
+  <p>Madarász Dávid · <a href="mailto:paszuppaszup@gmail.com">paszuppaszup@gmail.com</a></p>
+
+  <p class="meta">Ez a tájékoztató a levelező alkalmazás Google-hozzáférésére vonatkozik. Az ügynökség megkereséseire és ügyfélkapcsolataira vonatkozó részletes adatkezelési tájékoztató külön készül.</p>
+
+  <footer><a href="index.html">Vissza a kezdőlapra</a></footer>
+</main>
+</body>
+</html>
